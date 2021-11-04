@@ -8,15 +8,7 @@ $(document).ready(function () {
     $('body,html').animate({scrollTop: top}, 1500);
   });
 
-  $('.projects-slick__slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    arrows: false,
-    swipe: false,
-   });
+  
 
 
   let services = $('.services-block-slider');
@@ -53,6 +45,20 @@ $(document).ready(function () {
     variableWidth: true,
     prevArrow: $('.team-arrow__left'),
     nextArrow: $('.team-arrow__right'),
+    responsive: [
+        {
+          breakpoint: 720,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            variableWidth: false,
+            centerMode:false,
+            dots: true,
+          }
+        }
+      ]
    });
 
   $('.company-slider').slick({
@@ -73,8 +79,51 @@ $(document).ready(function () {
     focusOnSelect: true,
     prevArrow: $('.reviews-arrow__left'),
     nextArrow: $('.reviews-arrow__right'),
+    responsive: [
+        {
+          breakpoint: 720,
+          settings: {
+            dots: true,
+          }
+        }
+      ]
    });
 
-
   
+
+  if ($(window).width() >= 720) {
+      $('.projects-slick__slider').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 4000,
+          arrows: false,
+          swipe: false,
+         });
+  }
+  if ($(window).width() <= 720) {
+      $('.certificates-row').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipe: true,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
+        centerMode:true,
+       });
+      
+
+      $('.projects-row').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipe: true,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
+        centerMode:true,
+       });
+  }
 })
