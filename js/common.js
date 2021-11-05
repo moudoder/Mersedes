@@ -2,6 +2,8 @@ $(document).ready(function () {
   new WOW().init();
   $(".phone").mask("+7 (999) 999-9999");
   $(".scrol-to").on("click", function (event) {
+    $('.modal-menu').removeClass('modal-menu-active');
+    $('.dark-window').removeClass('dark-window-active');
     event.preventDefault();
     let id  = $(this).attr('href'),
     top = $(id).offset().top;
@@ -9,32 +11,73 @@ $(document).ready(function () {
   });
 
   
-
-
+  $('.nav-menu__btn').on('click', function() {
+    $('.modal-menu').addClass('modal-menu-active');
+    $('.dark-window').addClass('dark-window-active');
+  })
+  $('.modal-menu-close').on('click', function() {
+    $('.modal-menu').removeClass('modal-menu-active');
+    $('.dark-window').removeClass('dark-window-active');
+  })
   let services = $('.services-block-slider');
   for (var i = services.length - 1; i >= 0; i--) {
-    console.l
-    services[i]
+    let par_ser = $(services[i]).parent('.services-block-slider-wrapper');
+    par_ser = $(par_ser).children('.services-block-arrows');
+
+    let arrow_r = $(par_ser).children('.arrow__next')
+    let arrow_l = $(par_ser).children('.arrow__prev')
+    console.log(par_ser)
+    $(services[i]).slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      swipe: true,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      prevArrow: arrow_l,
+      nextArrow: arrow_r,
+     });
   }
   $('.btn-modal').on('click', function() {
+    $('.modal-menu').removeClass('modal-menu-active');
     $('.dark-window').addClass('dark-window-active');
     $('.modal-window').addClass('modal-window-active');
+    return false;
+  })
+
+  $('.btn-modal-1').on('click', function() {
+    $('.modal-window__title').text('Получить расчет');
+     $('.modal-window__text')[0].innerHTML = '  Или свяжитесь любым удобным для вас <br> способом и получите расчет <br> смоимости на тюнинг'
+    $('.modal-window__form__btn').text('Получить расчет');
+    return false;
+  })
+
+  $('.btn-modal-2').on('click', function() {
+    $('.modal-window__title').text('Получить подарок');
+    $('.modal-window__text')[0].innerHTML = '  Или свяжитесь любым удобным для вас <br> способом и получите подарок <br>'
+    $('.modal-window__form__btn').text('Забрать подарок');
+    return false;
+  })
+
+  $('.btn-modal-3').on('click', function() {
+    $('.modal-window__title').text('Оставить заявку');
+    $('.modal-window__text')[0].innerHTML = '  Или свяжитесь любым <br> удобным для вас  способом'
+    $('.modal-window__form__btn').text('Оставить заявку');
+    return false;
+  })
+
+  $('.btn-modal-4').on('click', function() {
+    $('.modal-window__title').text('Обратный звонок');
+    $('.modal-window__text')[0].innerHTML = 'Оставьте заявку и Вам перезвонят в течении <br> 10 минут или свяжитесь любым удобным <br> для вас способом'
+    $('.modal-window__form__btn').text('Заказать обратный звонок');
     return false;
   })
   $('.dark-window').on('click', function() {
     $('.dark-window').removeClass('dark-window-active');
     $('.modal-window').removeClass('modal-window-active');
+    $('.modal-menu').removeClass('modal-menu-active');
   })
-  $('.services-block-slider').slick({
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    swipe: true,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    prevArrow: $('.arrow__prev'),
-    nextArrow: $('.arrow__next'),
-   });
+  
 
   $('.team-slider').slick({
     infinite: true,
@@ -66,9 +109,20 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,
-    autoplay: false,
-    autoplaySpeed: 500,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    speed: 4000,
    });
+
+  $('.present-bottom_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+   });
+
   $('.reviews-slider').slick({
     infinite: true,
     slidesToShow: 3,
@@ -92,6 +146,7 @@ $(document).ready(function () {
   
 
   if ($(window).width() >= 720) {
+    
       $('.projects-slick__slider').slick({
           infinite: true,
           slidesToShow: 1,
@@ -99,8 +154,12 @@ $(document).ready(function () {
           autoplay: false,
           autoplaySpeed: 4000,
           arrows: false,
-          swipe: false,
+          swipe: true,
          });
+
+    setInterval(function(){ 
+        $('.projects-slick__slider').slick('slickNext');
+    }, 5000);
   }
   if ($(window).width() <= 720) {
       $('.certificates-row').slick({

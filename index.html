@@ -10,6 +10,7 @@
 	<!-- libs css-->
 	<link rel="stylesheet" href="css/libs.min.css">
 	<!-- main css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
 	<form action="" class="modal-window__form">
 		<input type="text" class="modal-window__input" placeholder="Имя">
 		<input type="text" class="modal-window__input phone" placeholder="Ваш номер телефона">
-		<button class="modal-window__btn header-btn">Оставить заявку</button>
+		<button class="modal-window__btn header-btn"><span class="modal-window__form__btn">Оставить заявку</span></button>
 	</form>
 	<a href="tel:" class="modal-window__phone accent-hov">
 		8 (909) 961-20-99
@@ -48,6 +49,56 @@
 		</div>
 	</div>
 </div>
+<div class="modal-menu">
+	<img src="img/close.png" alt="" class="modal-menu-close">
+	<ul class="modal-menu__list">
+		<li class="modal-menu__item">
+		<a href="#types-3" class="scrol-to">
+			О нас 
+		</a>
+		</li>
+		<li class="modal-menu__item">
+		<a href="#services" class="scrol-to">
+			Наши услуги
+		</a>
+		</li>
+		<li class="modal-menu__item">
+		<a href="#projects" class="scrol-to">
+			Готовые проекты
+		</a>
+		</li>
+		<li class="modal-menu__item">
+		<a href="#present" class="scrol-to">
+			Видео
+		</a>
+		</li>
+		<li class="modal-menu__item">
+		<a href="#actors" class="scrol-to">
+			Звездные клиенты
+		</a>
+		</li>
+		<li class="modal-menu__item">
+		<a href="#team" class="scrol-to">
+			Команда
+		</a>
+		</li>
+		<li class="modal-menu__item">
+		<a href="#reviews" class="scrol-to">
+			Отзывы
+		</a>
+		</li>
+		<li class="modal-menu__item">
+		<a href="#" class="btn-modal">
+			Оставить заявку
+		</a>
+		</li>
+		<li class="modal-menu__item">
+		<a href="#contacts" class="scrol-to">
+			Контакты
+		</a>
+		</li>
+	</ul>
+</div>                                       
 <header class="header">
 	<img src="img/header-bg.png" alt="" class="header-bg">
 	<img src="img/header-bg-mob.png" alt="" class="section-bg-mobile mob-true">
@@ -73,7 +124,7 @@
 					8 (909) 961-20-99
 				</a>
 			</div>
-			<a href="#" class="nav-back">
+			<a href="#" class="btn-modal nav-back btn-modal-4">
 				<span class="nav-back__text">
 					Обратный звонок
 				</span>
@@ -83,6 +134,10 @@
 	</div>
 	<div class="header-content">
 		<div class="container">
+			<div class="promo-circles">
+	            <div class="promo-circles__item"></div> 
+	            <div class="promo-circles__item"></div>
+			</div>
 			<h2 class="header-subtitle wow fadeInLeft">
 				<span>Полный</span> тюнинг Mercedes-Benz
 			</h2>
@@ -249,7 +304,7 @@
 		</div>
 	</div>
 </section>
-<section class="types-3">
+<section class="types-3" id="types-3">
 	<img src="img/bg-3-mobile.png" alt="" class="section-bg-mobile mob-true">
 	<img src="img/top-sec.png" alt="" class="top-sec">
 	<img src="img/block-3.png" alt="" class="types-3-bg">
@@ -335,10 +390,11 @@
 			<div class="services-block wow fadeInUp">
 				<div class="services-block-slider-wrapper">
 					<div class="services-block-slider">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
+						<img src="img/услуги/обвесы/631fb66a_medium.jpg.webp" alt="" class="services-slide">
+						<img src="img/услуги/обвесы/IMG_20200925_105820.jpg" alt="" class="services-slide">
+						<img src="img/услуги/обвесы/IMG_4488.jpg" alt="" class="services-slide">
+						<img src="img/услуги/обвесы/IMG_4702.jpg" alt="" class="services-slide">
+						<img src="img/услуги/обвесы/IMG_5919.jpg" alt="" class="services-slide">
 					</div>
 					<div class="services-block-arrows">
 						<img src="img/arrow.png" alt="" class="services-block-arrow arrow__prev">
@@ -358,10 +414,11 @@
 			<div class="services-block wow fadeInUp">
 				<div class="services-block-slider-wrapper">
 					<div class="services-block-slider">
-						<img src="img/slide-2.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
+						<img src="img/услуги/салон/2019-G63-AMG-Interior-Orange-Brabus.jpg" alt="" class="services-slide">
+						<img src="img/услуги/салон/IMG_9960.jpg" alt="" class="services-slide">
+						<img src="img/услуги/салон/DSC09459.jpg" alt="" class="services-slide">
+						<img src="img/услуги/салон/IMG_3151.jpg" alt="" class="services-slide">
+						<img src="img/услуги/салон/IMG_5949.jpg" alt="" class="services-slide">
 					</div>
 					<div class="services-block-arrows">
 						<img src="img/arrow.png" alt="" class="services-block-arrow arrow__prev">
@@ -381,10 +438,11 @@
 			<div class="services-block wow fadeInUp">
 				<div class="services-block-slider-wrapper">
 					<div class="services-block-slider">
-						<img src="img/slide-3.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
+						<img src="img/услуги/руль/9mie8cU-9Q4.jpg" alt="" class="services-slide">
+						<img src="img/услуги/руль/e7c75b80-8159-4e69-bdd9-bb4ff60cf45d.jpg" alt="" class="services-slide">
+						<img src="img/услуги/руль/IMG_0070.heic" alt="" class="services-slide">
+						<img src="img/услуги/руль/IMG_4381.JPG" alt="" class="services-slide">
+						<img src="img/услуги/руль/IMG_6654.heic" alt="" class="services-slide">
 					</div>
 					<div class="services-block-arrows">
 						<img src="img/arrow.png" alt="" class="services-block-arrow arrow__prev">
@@ -403,10 +461,11 @@
 			<div class="services-block wow fadeInUp">
 				<div class="services-block-slider-wrapper">
 					<div class="services-block-slider">
-						<img src="img/slide-4.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
+						<img src="img/услуги/карбон/IMG_1167.jpg" alt="" class="services-slide">
+						<img src="img/услуги/карбон/IMG_1187.jpg" alt="" class="services-slide">
+						<img src="img/услуги/карбон/IMG_4746.jpg" alt="" class="services-slide">
+						<img src="img/услуги/карбон/IMG_5957.jpg" alt="" class="services-slide">
+						<img src="img/услуги/карбон/IMG_5965.jpg" alt="" class="services-slide">
 					</div>
 					<div class="services-block-arrows">
 						<img src="img/arrow.png" alt="" class="services-block-arrow arrow__prev">
@@ -426,10 +485,10 @@
 			<div class="services-block wow fadeInUp">
 				<div class="services-block-slider-wrapper">
 					<div class="services-block-slider">
-						<img src="img/slide-5.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
+						<img src="img/услуги/выхлопная система/1 (1).jpg" alt="" class="services-slide">
+						<img src="img/услуги/выхлопная система/1 (1).png" alt="" class="services-slide">
+						<img src="img/услуги/выхлопная система/1 (2).jpg" alt="" class="services-slide">
+						<img src="img/услуги/выхлопная система/4.jpg" alt="" class="services-slide">
 					</div>
 					<div class="services-block-arrows">
 						<img src="img/arrow.png" alt="" class="services-block-arrow arrow__prev">
@@ -448,10 +507,10 @@
 			<div class="services-block wow fadeInUp">
 				<div class="services-block-slider-wrapper">
 					<div class="services-block-slider">
-						<img src="img/slide-6.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
+						<img src="img/услуги/колеса/2880-1800-crop-mercedes-benz-g-65-amg-c150329112014080520_1.jpg" alt="" class="services-slide">
+						<img src="img/услуги/колеса/2ks_enl.jpg" alt="" class="services-slide">
+						<img src="img/услуги/колеса/61a404b3.jpg.webp" alt="" class="services-slide">
+						<img src="img/услуги/колеса/xo_miami_22_mb_g550_7.jpg" alt="" class="services-slide">
 					</div>
 					<div class="services-block-arrows">
 						<img src="img/arrow.png" alt="" class="services-block-arrow arrow__prev">
@@ -471,10 +530,11 @@
 			<div class="services-block wow fadeInUp">
 				<div class="services-block-slider-wrapper">
 					<div class="services-block-slider">
-						<img src="img/slide-7.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
+						<img src="img/услуги/окрас/2020-mercedes-amg-g63-brabus-700-gu-2880x1800.jpg" alt="" class="services-slide">
+						<img src="img/услуги/окрас/87c0ecd3ad7fd0bc8b87.jpg" alt="" class="services-slide">
+						<img src="img/услуги/окрас/DSC09555.jpg" alt="" class="services-slide">
+						<img src="img/услуги/окрас/i.webp" alt="" class="services-slide">
+						<img src="img/услуги/окрас/TopCar-Mercedes-AMG-G-63-Light-Package-Grey-2020-1680x1050-001.jpg" alt="" class="services-slide">
 					</div>
 					<div class="services-block-arrows">
 						<img src="img/arrow.png" alt="" class="services-block-arrow arrow__prev">
@@ -494,10 +554,9 @@
 			<div class="services-block wow fadeInUp">
 				<div class="services-block-slider-wrapper">
 					<div class="services-block-slider">
-						<img src="img/slide-8.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
+						<img src="img/услуги/шумка/12799ds-1920.jpg" alt="" class="services-slide">
+						<img src="img/услуги/шумка/62ca466s-1920.jpg" alt="" class="services-slide">
+						<img src="img/услуги/шумка/img_20200324_140914.jpg" alt="" class="services-slide">
 					</div>
 					<div class="services-block-arrows">
 						<img src="img/arrow.png" alt="" class="services-block-arrow arrow__prev">
@@ -516,10 +575,9 @@
 			<div class="services-block wow fadeInUp">
 				<div class="services-block-slider-wrapper">
 					<div class="services-block-slider">
-						<img src="img/slide-9.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
-						<img src="img/slide-1.png" alt="" class="services-slide">
+						<img src="img/услуги/звук/53a30248-e732-4fde-a55a-41f864ef83ca.jpg" alt="" class="services-slide">
+						<img src="img/услуги/звук/be0d87bd-1151-4014-8177-e055f075a10a.jpg" alt="" class="services-slide">
+						<img src="img/услуги/звук/d24fddes-1920.jpg" alt="" class="services-slide">
 					</div>
 					<div class="services-block-arrows">
 						<img src="img/arrow.png" alt="" class="services-block-arrow arrow__prev">
@@ -539,7 +597,7 @@
 		</div>
 	</div>
 	<div class="services-wrap">
-		<a href="#" class="header-btn btn-modal">
+		<a href="#" class="header-btn btn-modal-1 btn-modal">
 			<span>получить расчет на тюнинг</span>
 		</a>
 	</div>
@@ -570,115 +628,144 @@
 			выданы своим владельцам
 		</h2>
 		<div class="projects-row">
-			<div class="projects-block projects-block_1 projects-slick__slider wow fadeInUp">
-				<div class="projects-block-wrapper">
-					<div class="projects-block-text">
-						<span class="projects-block__name">
-							Что было сделано:
-						</span>
-						<ul class="projects-block__list">
-							<li class="projects-block__item">
-								- Установка AMG обвеса
-							</li>
-							<li class="projects-block__item">
-								- Оклейка в 2х цветную полиуретановую пленку
-							</li>
-							<li class="projects-block__item">
-								- Полный Перешив руля, карты дверей, сидений с <br>
-								индивидуальной перфорацией, потолок, стойки
-							</li>
-							<li class="projects-block__item">
-								- Комплексная шумоизоляция в 4 слоя
-							</li>
-						</ul>
-					</div>
-					<div class="projects-block__slider_2">
-					   <img src="img/projects-1.png" alt="">
-					</div>
+			<div class="projects-block projects-block_1 wow fadeInUp">
+				<div class="projects-block-text">
+					<span class="projects-block__name">
+						Что было сделано:
+					</span>
+					<ul class="projects-block__list">
+						<li class="projects-block__item">
+							- Установка AMG обвеса
+						</li>
+						<li class="projects-block__item">
+							- Оклейка в 2х цветную полиуретановую пленку
+						</li>
+						<li class="projects-block__item">
+							- Полный Перешив руля, карты дверей, сидений с <br>
+							индивидуальной перфорацией, потолок, стойки
+						</li>
+						<li class="projects-block__item">
+							- Комплексная шумоизоляция в 4 слоя
+						</li>
+					</ul>
 				</div>
-				<div class="projects-block-wrapper">
-					<div class="projects-block-text">
-						<span class="projects-block__name">
-							Что было сделано:
-						</span>
-						<ul class="projects-block__list">
-							<li class="projects-block__item">
-								- Установка AMG обвеса
-							</li>
-							<li class="projects-block__item">
-								- Оклейка в 2х цветную полиуретановую пленку
-							</li>
-							<li class="projects-block__item">
-								- Полный Перешив руля, карты дверей, сидений с <br>
-								индивидуальной перфорацией, потолок, стойки
-							</li>
-							<li class="projects-block__item">
-								- Комплексная шумоизоляция в 4 слоя
-							</li>
-						</ul>
-					</div>
-					<div class="projects-block__slider_2">
-					   <img src="img/projects-1.png" alt="">
-					</div>
-				</div>
-				<div class="projects-block-wrapper">
-					<div class="projects-block-text">
-						<span class="projects-block__name">
-							Что было сделано:
-						</span>
-						<ul class="projects-block__list">
-							<li class="projects-block__item">
-								- Установка AMG обвеса
-							</li>
-							<li class="projects-block__item">
-								- Оклейка в 2х цветную полиуретановую пленку
-							</li>
-							<li class="projects-block__item">
-								- Полный Перешив руля, карты дверей, сидений с <br>
-								индивидуальной перфорацией, потолок, стойки
-							</li>
-							<li class="projects-block__item">
-								- Комплексная шумоизоляция в 4 слоя
-							</li>
-						</ul>
-					</div>
-					<div class="projects-block__slider_2">
-					   <img src="img/projects-1.png" alt="">
-					</div>
+				<div class="projects-block__slider projects-slick__slider">
+				   <img src="img/недавние проекты/1/DSC09433-2.jpg" alt="">
+				   <img src="img/недавние проекты/1/DSC09444.jpg" alt="">
+				   <img src="img/недавние проекты/1/DSC09449.jpg" alt="">
+				   <img src="img/недавние проекты/1/DSC09483.jpg" alt="">
+				   <img src="img/недавние проекты/1/DSC09490.jpg" alt="">
 				</div>
 			</div>
 			<div class="projects-block projects-block_2 wow fadeInUp">
+				<div class="projects-block-text">
+					<span class="projects-block__name">
+						Что было сделано:
+					</span>
+					<ul class="projects-block__list">
+						<li class="projects-block__item">
+							- Установка AMG обвеса
+						</li>
+						<li class="projects-block__item">
+							- Оклейка в 2х цветную полиуретановую пленку
+						</li>
+						<li class="projects-block__item">
+							- Полный Перешив руля, карты дверей, сидений с <br>
+							индивидуальной перфорацией, потолок, стойки
+						</li>
+						<li class="projects-block__item">
+							- Комплексная шумоизоляция в 4 слоя
+						</li>
+					</ul>
+				</div>
 				<div class="projects-block__slider projects-slick__slider">
-				   <img src="img/projects-2.png" alt="">
-				   <img src="img/projects-2.png" alt="">
-				   <img src="img/projects-2.png" alt="">
+				   <img src="img/недавние проекты/2/IMG_7357.jpg" alt="">
+				   <img src="img/недавние проекты/2/IMG_7363.jpg" alt="">
+				   <img src="img/недавние проекты/2/IMG_7383.jpg" alt="">
+				   <img src="img/недавние проекты/2/IMG_7384.jpg" alt="">
+				   <img src="img/недавние проекты/2/IMG_7388.jpg" alt="">
 				</div>
 			</div>
 			<div class="projects-block projects-block_3 wow fadeInUp">
+				<div class="projects-block-text">
+					<span class="projects-block__name">
+						Что было сделано:
+					</span>
+					<ul class="projects-block__list">
+						<li class="projects-block__item">
+							- Установка AMG обвеса
+						</li>
+						<li class="projects-block__item">
+							- Оклейка в 2х цветную полиуретановую пленку
+						</li>
+						<li class="projects-block__item">
+							- Полный Перешив руля, карты дверей, сидений с <br>
+							индивидуальной перфорацией, потолок, стойки
+						</li>
+					</ul>
+				</div>
 				<div class="projects-block__slider projects-slick__slider">
-				   <img src="img/projects-3.png" alt="">
-				   <img src="img/projects-3.png" alt="">
-				   <img src="img/projects-3.png" alt="">
+				   <img src="img/недавние проекты/3/IMG_5924.jpg" alt="">
+				   <img src="img/недавние проекты/3/IMG_5946.jpg" alt="">
+				   <img src="img/недавние проекты/3/IMG_5950.jpg" alt="">
+				   <img src="img/недавние проекты/3/IMG_5955.jpg" alt="">
+				   <img src="img/недавние проекты/3/IMG_5957-2.jpg" alt="">
 				</div>
 			</div>
 			<div class="projects-block projects-block_4 wow fadeInUp">
+				<div class="projects-block-text">
+					<span class="projects-block__name">
+						Что было сделано:
+					</span>
+					<ul class="projects-block__list">
+						<li class="projects-block__item">
+							- Установка AMG обвеса
+						</li>
+						<li class="projects-block__item">
+							- Оклейка в 2х цветную полиуретановую пленку
+						</li>
+						<li class="projects-block__item">
+							- Полный Перешив руля, карты дверей, сидений с <br>
+							индивидуальной перфорацией, потолок, стойки
+						</li>
+					</ul>
+				</div>
 				<div class="projects-block__slider projects-slick__slider">
-				   <img src="img/projects-4.png" alt="">
-				   <img src="img/projects-4.png" alt="">
-				    <img src="img/projects-4.png" alt="">
+				   <img src="img/недавние проекты/4/IMG_4702-2.jpg" alt="">
+				   <img src="img/недавние проекты/4/IMG_4707.jpg" alt="">
+				   <img src="img/недавние проекты/4/IMG_4738.jpg" alt="">
+				   <img src="img/недавние проекты/4/IMG_4734.jpg" alt="">
+				   <img src="img/недавние проекты/4/IMG_4748.jpg" alt="">
 				</div>
 			</div>
 			<div class="projects-block projects-block_5 wow fadeInUp">
+				<div class="projects-block-text">
+					<span class="projects-block__name">
+						Что было сделано:
+					</span>
+					<ul class="projects-block__list">
+						<li class="projects-block__item">
+							- Установка AMG обвеса
+						</li>
+						<li class="projects-block__item">
+							- Оклейка в 2х цветную полиуретановую пленку
+						</li>
+						<li class="projects-block__item">
+							- Полный Перешив руля, карты дверей, сидений с <br>
+							индивидуальной перфорацией, потолок, стойки
+						</li>
+					</ul>
+				</div>
 				<div class="projects-block__slider projects-slick__slider">
-				   <img src="img/projects-5.png" alt="">
-				   <img src="img/projects-5.png" alt="">
-				   <img src="img/projects-5.png" alt="">
+				   <img src="img/недавние проекты/5/IMG_4487.jpg" alt="">
+				   <img src="img/недавние проекты/5/IMG_4486.jpg" alt="">
+				   <img src="img/недавние проекты/5/IMG_4484.jpg" alt="">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="present">
+<section class="present" id="present">
 	<img src="img/red-blick.png" alt="" class="present-bg">
 	<div class="container">
 		<div class="present-top">
@@ -689,7 +776,7 @@
 				<p class="present-subtitle">
 					При заказе комплексного тюнинга сделаем на выбор
 				</p>
-				<a href="#" class="header-btn btn-modal">
+				<a href="#" class="header-btn btn-modal btn-modal-2">
 					<span>Забрать подарок</span>
 				</a>
 			</div>
@@ -700,7 +787,17 @@
 		</div>
 		<div class="present-bottom">
 			<div class="present-bottom_left">
-				<img src="img/video.png" alt="" class="present-bottom wow fadeInUp">
+				<div class="present-bottom_slider">
+					<div class="present-bottom_slide">
+						<img src="img/video.png" alt="" class="present-bottom wow fadeInUp">
+					</div>
+					<div class="present-bottom_slide">
+						<img src="img/video.png" alt="" class="present-bottom wow fadeInUp">
+					</div>
+					<div class="present-bottom_slide">
+						<img src="img/video.png" alt="" class="present-bottom wow fadeInUp">
+					</div>
+				</div>
 			</div>
 			<div class="present-bottom_right wow fadeInRight">
 				<h2 class="present-title">
@@ -737,12 +834,12 @@
 				созданной под вас.
 			</p>
 		</div>
-		<a href="#" class="header-btn btn-modal">
+		<a href="#" class="header-btn btn-modal btn-modal-1">
 			<span>Получить предварительный рассчет </span>
 		</a>
 	</div>
 </section>
-<section class="actors">
+<section class="actors" id="actors">
 	<img src="img/blick-bg.png" alt="" class="actors-bg">
 	<div class="container">
 		<h2 class="types-3__title wow fadeInUp">
@@ -792,25 +889,25 @@
 	</h2>
 	<div class="container">
 		<div class="certificates-row">
-			<a href="#" class="certificates-block wow fadeInUp" data-wow-delay="0.3s">
+			<a data-fancybox="gallery" data-caption="Сертификат 1" href="img/sertificate-1.png" class="certificates-block wow fadeInUp" data-wow-delay="0.3s">
 				<span class="sertificates-block-open">
 					<img src="img/zoom.png" alt="">
 				</span>
 				<img src="img/sertificate-1.png" alt="">
 			</a>
-			<a href="#" class="certificates-block wow fadeInUp" data-wow-delay="0.6s">
+			<a data-fancybox="gallery" data-caption="Сертификат 2" href="img/sertificate-2.png" class="certificates-block wow fadeInUp" data-wow-delay="0.6s">
 				<span class="sertificates-block-open">
 					<img src="img/zoom.png" alt="">
 				</span>
 				<img src="img/sertificate-2.png" alt="">
 			</a>
-			<a href="#" class="certificates-block wow fadeInUp" data-wow-delay="0.9s">
+			<a data-fancybox="gallery" data-caption="Сертификат 3" href="img/sertificate-3.png" class="certificates-block wow fadeInUp" data-wow-delay="0.9s">
 				<span class="sertificates-block-open">
 					<img src="img/zoom.png" alt="">
 				</span>
 				<img src="img/sertificate-3.png" alt="">
 			</a>
-			<a href="#" class="certificates-block wow fadeInUp" data-wow-delay="1.2s">
+			<a data-fancybox="gallery" data-caption="Сертификат 4" href="img/sertificate-4.png" class="certificates-block wow fadeInUp" data-wow-delay="1.2s">
 				<span class="sertificates-block-open">
 					<img src="img/zoom.png" alt="">
 				</span>
@@ -865,7 +962,7 @@
 		</div>
 	</div>
 </section>
-<section class="team">
+<section class="team" id="team">
 	<img src="img/team-bg.png" alt="" class="team-bg">
 	<img src="img/team-2-bg.png" alt="" class="team-bg-2">
 	<img src="img/team-bg-mobile.png" alt="" class="section-bg-mobile mob-true">
@@ -890,38 +987,38 @@
 				</div>
 				<div class="team-slide">
 					<div class="team-wrap">
-						<img src="img/helik-1.png" alt="">
+						<img src="img/helik-2.png" alt="">
 					</div>
 					<h3 class="team-name">
-						Феликс
+						МИХАИЛ
 					</h3>
 					<div class="team-text">
-						Главный мастер по подготовке и 
-						оклейки кожи 21 год
+						Старший мастер по выклейке <br>
+						кожи с опытом 7 лет
 					</div>
 				</div>
 				<div class="team-slide">
 					<div class="team-wrap">
-						<img src="img/helik-1.png" alt="">
+						<img src="img/helik-3.png" alt="">
 					</div>
 					<h3 class="team-name">
-						Феликс
+						ДОСТАН
 					</h3>
 					<div class="team-text">
-						Главный мастер по подготовке и 
-						оклейки кожи 21 год
+						Старший мастер по пошиву <br> 
+						кожи с опытом 8 лет
 					</div>
 				</div>
 				<div class="team-slide">
 					<div class="team-wrap">
-						<img src="img/helik-1.png" alt="">
+						<img src="img/helik-4.png" alt="">
 					</div>
 					<h3 class="team-name">
-						Феликс
+						НАТАЛЬЯ
 					</h3>
 					<div class="team-text">
-						Главный мастер по подготовке и 
-						оклейки кожи 21 год
+						Старший мастер, конструктор <br>
+						 по пошиву кожи с опытом 11 лет
 					</div>
 				</div>
 			</div>
@@ -1042,12 +1139,12 @@
 				Начинаем работу
 			</span>
 		</div>
-		<a href="#" class="header-btn btn-modal">
+		<a href="#" class="header-btn btn-modal btn-modal-3">
 			<span>Хочу оставить заявку</span>
 		</a>
 	</div>
 </section>
-<section class="reviews">
+<section class="reviews" id="reviews">
 	<img src="img/rev-bg.png" alt="" class="reviews-bg">
 	<img src="img/rev-bg-mobile.png" alt="" class="section-bg-mobile mob-true">
 	<div class="container">
@@ -1058,28 +1155,28 @@
 	<div class="reviews-wrapper">
 		<div class="reviews-slider">
 			<div class="reviews-slide">
-				<img src="img/rev-1 (1).png" alt="">
+				<img src="img/1.png" alt="">
 			</div>
 			<div class="reviews-slide">
-				<img src="img/rev-1 (1).png" alt="">
+				<img src="img/2.png" alt="">
 			</div>
 			<div class="reviews-slide">
-				<img src="img/rev-1 (1).png" alt="">
+				<img src="img/3.png" alt="">
 			</div>
 			<div class="reviews-slide">
-				<img src="img/rev-1 (1).png" alt="">
+				<img src="img/4.png" alt="">
 			</div>
 			<div class="reviews-slide">
-				<img src="img/rev-1 (1).png" alt="">
+				<img src="img/5.png" alt="">
 			</div>
 			<div class="reviews-slide">
-				<img src="img/rev-1 (1).png" alt="">
+				<img src="img/6.png" alt="">
 			</div>
 			<div class="reviews-slide">
-				<img src="img/rev-1 (1).png" alt="">
+				<img src="img/7.png" alt="">
 			</div>
 			<div class="reviews-slide">
-				<img src="img/rev-1 (1).png" alt="">
+				<img src="img/8.png" alt="">
 			</div>
 		</div>
 		<div class="team-arrows">
@@ -1111,7 +1208,7 @@
 				Подготовим такое предложение, <br>
 				<span>которое вас устроит</span>
 			</h2>
-			<a href="#" class="header-btn btn-modal">
+			<a href="#" class="header-btn btn-modal btn-modal-3">
 				<span>Хочу оставить заявку</span>
 			</a>
 		</div>
@@ -1174,7 +1271,7 @@
 		</div>
 	</div>
 </section>
-<section class="contacts">
+<section class="contacts" id="contacts">
 	<div class="contacts-map-mobile mob-true">
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A78f9d5716e8bbab370b63b35463b6b8157885406a0e482061cd82ed0958ca79a&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
 	</div>
@@ -1214,23 +1311,23 @@
 				</span>
 			</div>
 			<div class="contacts-soc">
-				<a href="" class="contacts-soc__item">
+				<a target="_blank" href="https://www.facebook.com/velescentr/" class="contacts-soc__item">
 					<img src="img/icon-1.png" alt="">
 					<img class="contacts-soc__2" src="img/icon-1_2.png" alt="">
 				</a>
-				<a href="" class="contacts-soc__item">
+				<a target="_blank" href="https://vk.com/velescentrmoscow" class="contacts-soc__item">
 					<img src="img/icon-2.png" alt="">
 					<img class="contacts-soc__2" src="img/icon-2_2.png" alt="">
 				</a>
-				<a href="" class="contacts-soc__item">
+				<a target="_blank" href="https://ok.ru/denisinmoscow" class="contacts-soc__item">
 					<img src="img/icon-3.png" alt="">
 					<img class="contacts-soc__2" src="img/icon-3_2.png" alt="">
 				</a>
-				<a href="" class="contacts-soc__item">
+				<a target="_blank" href="https://www.youtube.com/channel/UCFvr6JSv7VhuGEQBYm0rbZQ" class="contacts-soc__item">
 					<img src="img/icon-4.png" alt="">
 					<img class="contacts-soc__2" src="img/icon-4_2.png" alt="">
 				</a>
-				<a href="" class="contacts-soc__item">
+				<a target="_blank" href="https://www.instagram.com/velescentr/" class="contacts-soc__item">
 					<img src="img/icon-5.png" alt="">
 					<img class="contacts-soc__2" src="img/icon-5_2.png" alt="">
 				</a>
@@ -1261,7 +1358,7 @@
 					8 (909) 961-20-99
 				</a>
 			</div>
-			<a href="#" class="nav-back">
+			<a href="#" class="nav-back btn-modal btn-modal-4">
 				<span class="nav-back__text">
 					Обратный звонок
 				</span>
@@ -1272,6 +1369,7 @@
 </footer>
 <!-- libs js -->
 <script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/common.js"></script>
 </body>
 
