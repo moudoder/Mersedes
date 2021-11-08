@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  new WOW().init();
+  // new WOW().init();
   $(".phone").mask("+7 (999) 999-9999");
   $(".scrol-to").on("click", function (event) {
     $('.modal-menu').removeClass('modal-menu-active');
@@ -9,6 +9,26 @@ $(document).ready(function () {
     top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1500);
   });
+
+  $('.video-play_1').on('click', function() {
+    $('.modal-video-1').addClass('modal-video-active');
+    $('.dark-window').addClass('dark-window-active');
+    $('video')[0].muted = false;
+    return false;
+  })
+  $('.video-play_2').on('click', function() {
+    $('.modal-video-2').addClass('modal-video-active');
+    $('.dark-window').addClass('dark-window-active');
+    $('video')[1].muted = false;
+    return false;
+  })
+  $('.modal-video__close').on('click', function() {
+    $('.modal-video').removeClass('modal-video-active');
+    $('.dark-window').removeClass('dark-window-active');
+    $('video')[0].muted = true;
+    $('video')[1].muted = true;
+    return false;
+  })
 
   let anm_counter = 1;
   setInterval(function(){ 
@@ -99,6 +119,11 @@ $(document).ready(function () {
     $('.dark-window').removeClass('dark-window-active');
     $('.modal-window').removeClass('modal-window-active');
     $('.modal-menu').removeClass('modal-menu-active');
+
+
+    $('video')[0].muted = true;
+    $('video')[1].muted = true;
+    $('.modal-video').removeClass('modal-video-active');
   })
   
 
@@ -135,7 +160,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: 'linear',
-    speed: 4000,
+    speed: 2000,
    });
 
   $('.present-bottom_slider').slick({
