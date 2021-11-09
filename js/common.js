@@ -10,6 +10,35 @@ $(document).ready(function () {
     $('body,html').animate({scrollTop: top}, 1500);
   });
 
+  let $element = $('.advantages');
+  let counter = 0;
+  $('.arrow-top').on('click', function() {
+    $('.arrow-top').removeClass('arrow-top-active');
+  })
+
+  $('.arrow-top').on("click", function (event) {
+   
+    event.preventDefault();
+    let id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, {
+      duration: 500,
+       complete: function(){
+          counter = 0;
+       }
+    });
+  });
+
+  $(window).scroll(function() {
+    let scroll = $(window).scrollTop() + $(window).height();
+    let offset = $element.offset().top
+   
+    if (scroll > offset && counter == 0) {
+      $('.arrow-top').addClass('arrow-top-active');
+      counter = 1;
+    }
+  });
+
   $('.video-play_1').on('click', function() {
     $('.modal-video-1').addClass('modal-video-active');
     $('.dark-window').addClass('dark-window-active');
@@ -62,6 +91,12 @@ $(document).ready(function () {
     $('.modal-menu').removeClass('modal-menu-active');
     $('.dark-window').removeClass('dark-window-active');
   })
+
+  $('.modal-zv-close').on('click', function() {
+    $('.modal-window').removeClass('modal-window-active');
+    $('.dark-window').removeClass('dark-window-active');
+  })
+
   let services = $('.services-block-slider');
   for (var i = services.length - 1; i >= 0; i--) {
     let par_ser = $(services[i]).parent('.services-block-slider-wrapper');
@@ -104,7 +139,7 @@ $(document).ready(function () {
 
   $('.btn-modal-3').on('click', function() {
     $('.modal-window__title').text('Оставьте заявку');
-    $('.modal-window__text')[0].innerHTML = '  Или свяжитесь любым <br> удобным для вас  способом'
+    $('.modal-window__text')[0].innerHTML = '  Или связаться любым <br> удобным для вас  способом'
     $('.modal-window__form__btn').text('Оставить заявку');
     return false;
   })
@@ -170,7 +205,9 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
    });
-
+  $('.reviews-phone').on('click', function() {
+    $('.reviews-slider .slick-center')[0].click();
+  })
   $('.reviews-slider').slick({
     infinite: true,
     slidesToShow: 3,
@@ -178,7 +215,7 @@ $(document).ready(function () {
     swipe: true,
     centerMode:true,
     variableWidth: true,
-    focusOnSelect: true,
+    focusOnSelect: false,
     prevArrow: $('.reviews-arrow__left'),
     nextArrow: $('.reviews-arrow__right'),
     responsive: [
@@ -202,7 +239,7 @@ $(document).ready(function () {
           autoplay: false,
           autoplaySpeed: 4000,
           arrows: false,
-          swipe: true,
+          swipe: false,
          });
 
     setInterval(function(){ 
@@ -214,10 +251,10 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 4000,
+        autoplay: true,
+        autoplaySpeed: 3000,
         arrows: false,
-        swipe: true,
+        swipe: false,
        });
       $('.certificates-row').slick({
         infinite: true,
