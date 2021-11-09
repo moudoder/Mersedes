@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // new WOW().init();
+  new WOW().init();
   $(".phone").mask("+7 (999) 999-9999");
   $(".scrol-to").on("click", function (event) {
     $('.modal-menu').removeClass('modal-menu-active');
@@ -90,7 +90,7 @@ $(document).ready(function () {
 
   $('.btn-modal-1').on('click', function() {
     $('.modal-window__title').text('Получить расчет');
-     $('.modal-window__text')[0].innerHTML = '  Или свяжитесь любым удобным для вас <br> способом и получите расчет <br> смоимости на тюнинг'
+     $('.modal-window__text')[0].innerHTML = '  Или свяжитесь любым удобным для вас <br> способом и получите предварительный расчет <br> смоимости на тюнинг'
     $('.modal-window__form__btn').text('Получить расчет');
     return false;
   })
@@ -103,7 +103,7 @@ $(document).ready(function () {
   })
 
   $('.btn-modal-3').on('click', function() {
-    $('.modal-window__title').text('Оставить заявку');
+    $('.modal-window__title').text('Оставьте заявку');
     $('.modal-window__text')[0].innerHTML = '  Или свяжитесь любым <br> удобным для вас  способом'
     $('.modal-window__form__btn').text('Оставить заявку');
     return false;
@@ -210,6 +210,15 @@ $(document).ready(function () {
     }, 5000);
   }
   if ($(window).width() <= 720) {
+    $('.projects-slick__slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        arrows: false,
+        swipe: true,
+       });
       $('.certificates-row').slick({
         infinite: true,
         slidesToShow: 1,
@@ -226,11 +235,12 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        swipe: true,
+        swipe: false,
         dots: true,
         arrows: false,
         variableWidth: true,
         centerMode:true,
+        adaptiveHeight: true,
        });
   }
 })
