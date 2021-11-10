@@ -272,7 +272,7 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        swipe: false,
+        swipe: true,
         dots: true,
         arrows: false,
         variableWidth: true,
