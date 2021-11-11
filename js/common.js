@@ -218,6 +218,9 @@ $(document).ready(function () {
     focusOnSelect: false,
     prevArrow: $('.reviews-arrow__left'),
     nextArrow: $('.reviews-arrow__right'),
+    customPaging: function() {
+        return ''
+      },
     responsive: [
         {
           breakpoint: 720,
@@ -227,6 +230,9 @@ $(document).ready(function () {
         }
       ]
    });
+
+  
+  
 
   
 
@@ -280,4 +286,7 @@ $(document).ready(function () {
         adaptiveHeight: true,
        });
   }
+
+
+  
 })
